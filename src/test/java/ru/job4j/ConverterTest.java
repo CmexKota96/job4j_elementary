@@ -9,7 +9,7 @@ class ConverterTest {
     void whenConvert140RblThen2Euro() {
         float input = 140;
         float expected = 2;
-        float output =  (float) Converter.rubleToEuro(input);
+        float output = Converter.rubleToEuro(input);
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
@@ -18,7 +18,7 @@ class ConverterTest {
     void whenConvert180RblThen3Dollar() {
         float input = 180;
         float expected = 3;
-        float output = (float) Converter.rubleToDollar(input);
+        float output = Converter.rubleToDollar(input);
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
