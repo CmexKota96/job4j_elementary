@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.*;
 class VectorTest {
 
     @Test
-    void whenVectors12And34ThenResult45() {
+    void whenVectors35And21ThenResult56() {
         int x1 = 3, y1 = 5, x2 = 2, y2 = 1;
         String expected = "(5, 6)";
         String output = Vector.addVectors(x1, y1, x2, y2);
@@ -14,7 +14,7 @@ class VectorTest {
     }
 
     @Test
-    void whenVectorsMinus12And34ThenResult22() {
+    void whenVectorsMinus32And1Minus4ThenResultMinus26() {
         int x1 = -3, y1 = -2, x2 = 1, y2 = -4;
         String expected = "(-2, -6)";
         String output = Vector.addVectors(x1, y1, x2, y2);
@@ -22,7 +22,7 @@ class VectorTest {
     }
 
     @Test
-    void whenVectorsMinus12AndMinus34ThenResultMinus46() {
+    void whenVectorsMinus28AndMinus63ThenResultMinus811() {
         int x1 = -2, y1 = -8, x2 = -6, y2 = -3;
         String expected = "(-8, -11)";
         String output = Vector.addVectors(x1, y1, x2, y2);
