@@ -3,7 +3,6 @@ package ru.job4j.loop;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
-
 class CounterTest {
 
     @Test
@@ -32,5 +31,4 @@ class CounterTest {
         int output = Counter.sum(start,finish);
         assertThat(output == expected).isTrue();
     }
-
 }
