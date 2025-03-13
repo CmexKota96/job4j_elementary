@@ -1,12 +1,10 @@
 package ru.job4j.loop;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
 class CounterTest {
 
-    @Disabled
     @Test
     void sumStart5Finish10ThenExpected45() {
         int start = 5;
@@ -16,7 +14,6 @@ class CounterTest {
         assertThat(output == expected).isTrue();
     }
 
-    @Disabled
     @Test
     void sumStart10Finish5ThenExpected0() {
         int start = 10;
@@ -26,7 +23,6 @@ class CounterTest {
         assertThat(output == expected).isTrue();
     }
 
-    @Disabled
     @Test
     void sumStartMinus1FinishMinus5ThenExpected0() {
         int start = -1;
