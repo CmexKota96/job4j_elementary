@@ -9,7 +9,7 @@ class FactorialTest {
         int expected = 120;
         int number = 5;
         int output = Factorial.calculate(number);
-        assertThat(output == expected).isTrue();
+        assertThat(output).isEqualTo(expected);
     }
 
     @Test
@@ -17,7 +17,7 @@ class FactorialTest {
         int expected = 1;
         int number = 0;
         int output = Factorial.calculate(number);
-        assertThat(output == expected).isTrue();
+        assertThat(output).isEqualTo(expected);
     }
 
     @Test
@@ -25,6 +25,6 @@ class FactorialTest {
         int expected = 3628800;
         int number = 10;
         int output = Factorial.calculate(number);
-        assertThat(output == expected).isTrue();
+        assertThat(output).isEqualTo(expected);
     }
 }
