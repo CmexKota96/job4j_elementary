@@ -11,6 +11,3 @@ public class Savings {
         return years;
     }
 }
-//где goal — целевая сумма, которую нужно накопить,
-//annualDeposit — ежегодное пополнение,
-// percent — процентная ставка по вкладу.
