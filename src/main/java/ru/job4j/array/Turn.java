@@ -1,7 +1,6 @@
 package ru.job4j.array;
 
 public class Turn {
-    @SuppressWarnings("checkstyle:WhitespaceAround")
     public static int[] back(int[] array) {
         int temp;
         for (int i = 0; i < array.length / 2; i++) {
