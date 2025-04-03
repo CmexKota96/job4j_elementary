@@ -24,7 +24,7 @@ class SortSelectedTest {
     public void whenSort9() {
         int[] data = new int[] {5, 2, 3, 4, 7, 8, 6, 9, 1};
         int[] result = SortSelected.sort(data);
-        int[] expected = new int[] {1, 2, 3, 4 , 5, 6, 7, 8, 9};
+        int[] expected = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
         assertThat(result).containsExactly(expected);
     }
 }
