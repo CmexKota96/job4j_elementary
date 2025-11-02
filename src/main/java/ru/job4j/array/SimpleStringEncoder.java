@@ -5,27 +5,23 @@ public class SimpleStringEncoder {
         String result = "";
         char symbol = input.charAt(0);
         int counter = 1;
-        char currentSymbol = input.charAt(0);
+        char current = input.charAt(0);
         for (int i = 0; i < input.length(); i++) {
-            currentSymbol = input.charAt(i);
-            //boolean isLastSymbol = i == input.length() - 1;
-
-            if (currentSymbol != symbol) {
+            current = input.charAt(i);
+            if (current != symbol) {
                 result += symbol;
                 if (counter > 2) {
                     result += counter - 1;
                 }
-                symbol = currentSymbol;
+                symbol = current;
                 counter = 1;
             }
             counter++;
         }
-
-        result += currentSymbol;
+        result += current;
         if (counter > 2) {
             result += (--counter);
         }
-
         return result;
     }
 }
