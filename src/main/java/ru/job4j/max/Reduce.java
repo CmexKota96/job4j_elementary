@@ -7,6 +7,7 @@ public class Reduce {
         this.array = array;
     }
 
+
     public void print() {
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
